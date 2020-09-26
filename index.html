@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Infinity Scroll</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: calc(16px * 1.2);
+            padding: 24px;
+        }
+
+        .header {
+            font-size: 31.25px;
+            text-align: center;
+        }
+
+        .image-container {
+            margin: 10px 30%;
+            transform: translateY(20px);
+        }
+
+        .image-container img {
+            width: 100%;
+            margin-top: 5px
+        }
+
+        @media screen and (max-width: 767px) {
+            .image-container {
+                margin: 0;
+                width: 100%;
+            }
+
+            .image-container img:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p> Infinity scroll </p>
+    </div>
+    <div class="image-container">
+    </div>
+    <script type='module' src='script.js'></script>
+</body>
+
+</html>
